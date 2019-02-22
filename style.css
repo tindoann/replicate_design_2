@@ -5,34 +5,44 @@ html {
 body {
   font: 16px / 1 sans-serif;
 }
-h6 {
+h4 {
   color: transparent;
+  font-weight: 800;
   margin: 0px;
 }
+
+hr {
+  background-color: red; 
+  width: 90%;
+  margin: 0 auto; 
+  height: 4px; 
+  }
+
 .navbar {
   background-color: #F5F5F5;
   display:flex;
   font-family: Helvetica, sans-serif;
+  justify-content: space-between; 
+  align-items: center; 
+  height: 8em; 
 }
-.border {
-  border-top-color: red;
-  border-top-style: solid;
-  margin-left: 100px;
-  margin-right: 100px;
-  justify-content: center;
-}
+
 
 ul {
   list-style-type: none;
   display: flex;
   align-content: space-between;
-  padding-top: 30px;
-  margin-left: 60px;
+  padding-top: 20px;
+  margin-left: 40px;
 }
 a:link {
   text-decoration: none;
   padding: 20px;
   color: black;
+}
+
+li.active a{
+  color: red; 
 }
 a:hover {
   color: red;
@@ -42,7 +52,6 @@ a:hover {
   align-content: space-between;
   height: 35px;
   width: auto;
-  padding-left: 35em;
   padding-top: 15px;
 }
 .DESIGNCO {
@@ -51,6 +60,7 @@ a:hover {
 .logo {
   height: 36px;
   width: auto;
+  padding: 50px 15px; 
 }
 header {
   text-align:center;
