@@ -1,9 +1,9 @@
-html {
-  text-size-adjust: 100%;
+* {
+  margin: 0 auto; 
 }
 
 body {
-  font: 16px / 1 sans-serif;
+  font: 24px sans-serif;
 }
 h4 {
   color: transparent;
@@ -13,9 +13,9 @@ h4 {
 
 hr {
   background-color: red; 
-  width: 90%;
+  width: 95%;
   margin: 0 auto; 
-  height: 4px; 
+  height: 5px;
   }
 
 .navbar {
@@ -25,16 +25,23 @@ hr {
   justify-content: space-between; 
   align-items: center; 
   height: 8em; 
+  width: 100%; 
 }
 
+/* list in navbar */ 
 
 ul {
   list-style-type: none;
   display: flex;
   align-content: space-between;
   padding-top: 20px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
+
+ul > li {
+  margin-left: 5px; 
+}
+
 a:link {
   text-decoration: none;
   padding: 20px;
@@ -44,76 +51,88 @@ a:link {
 li.active a{
   color: red; 
 }
+
 a:hover {
   color: red;
   background-color: #D3D3D3;
 }
+
 .search {
   align-content: space-between;
   height: 35px;
   width: auto;
   padding-top: 15px;
 }
+
 .DESIGNCO {
+  margin-right: 25px; 
   font-weight: bold;
 }
+
 .logo {
   height: 36px;
   width: auto;
   padding: 50px 15px; 
 }
+
 header {
+  margin: 80px auto; 
+  width: 650px; 
   text-align:center;
 }
+
 header h1 {
   font-size: 50px;
   padding-bottom: -1em;
 }
+
 header h2 {
   font-weight: lighter;
 }
-.landscape {
-  width: 225px;
-  height: auto;
-  order: 1;
-}
-.portrait {
-  height: 450px;
-  width: auto;
-}
-.collage{
-  display:flex;
-  justify-content: center;
-}
+
 .column {
-  padding: 2em;
-  flex-direction:column;
-  display: inline;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 2px;
 }
+
+.items {
+  border-radius: 4px; 
+  margin: 4px 8px; 
+}
+
 #right {
   display: block;
   width: 300px;
 
 }
+
 .whatsnew {
   color: red;
   font-size: 20px;
 }
+
 h4 {
   font-size: 20px;
 }
+
 .recentproject:link {
   text-decoration: underline;
 }
+
 .textbox {
+
   display: flex;
   flex-direction: row;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 60px 80px; 
+  padding: 10px; 
 }
+
 .invisible {
   color: transparent;
 }
+
 .box {
   flex: 1;
 }
+
